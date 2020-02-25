@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="4" column="0">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>测试进度:</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="textBrowser_progress"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>添加IP(请先在列表内选中条目,多个IP地址间用&quot;,&quot;隔开)</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEdit_addIP"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_AddIP">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(26, 188, 156);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(29, 214, 177);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(23, 173, 143);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>添加IP</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton_TestAndOutput">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgb(178, 58, 238);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(191, 62, 255);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(154, 50, 205);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>测试选优并输出Hosts</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="6">
+        <widget class="QPushButton" name="pushButton_SaveList">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(178, 58, 238);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(191, 62, 255);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(154, 50, 205);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>保存列表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_ClearList">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(231, 76, 60);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(255, 102, 64);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(204, 65, 53);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>清空列表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButton_DeleteItem">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(255, 181, 6);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(255, 200, 50);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(255, 170, 0);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>删除条目</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QPushButton" name="pushButton_ReadList">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(52, 152, 219);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(60, 177, 255);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(45, 134, 193);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>读取列表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_GetIP">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(26, 188, 156);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(29, 214, 177);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(23, 173, 143);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>获取选中网址的IP</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="8">
+        <widget class="QTableView" name="tableView">
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>添加网址(例: github.com)</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_AddWebSite">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(52, 152, 219);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(60, 177, 255);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(45, 134, 193);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>添加网址</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEdit_addWebSite"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/donate/Donate_QRCode.jpg);</string>
+      </property>
+      <property name="text">
+       <string>捐赠:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>Hosts 输出:</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="textBrowser_hosts"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_CopyHosts">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(26, 188, 156);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:hover{
+background-color: rgb(29, 214, 177);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:pressed{
+background-color: rgb(23, 173, 143);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}
+QPushButton:disabled{
+background-color: rgb(166, 166, 166);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:8px;
+padding:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>复制</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
