@@ -396,6 +396,7 @@ void MainWindow::on_pushButton_DeleteItem_clicked()
         ui->tableView->setUpdatesEnabled(false);
         Table_model->removeRow(curRow);
         curRow=-1;
+        ui->tableView->clearSelection();
         ui->tableView->setUpdatesEnabled(true);
     }
     else
