@@ -27,3 +27,7 @@ Smart-Hosts-Manager主要用于帮助用户在配置Hosts文件时挑选出每�
 
 # 捐赠
 ![donate](/Donate_QRCode.jpg)
+
+---
+
+Icons made by : Freepik (https://www.flaticon.com/authors/freepik) From Flaticon : https://www.flaticon.com/
