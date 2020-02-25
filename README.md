@@ -2,7 +2,7 @@
 <img src="/SRC/Smart-Hosts-Manager/icon/icon_main.png" height="150">
 </p>
 
-<h2 align="center"> Waifu2x-Extension-GUI </h2>
+<h2 align="center"> Smart-Hosts-Manager </h2>
 
 <p align="center">
 <img src="https://img.shields.io/github/v/release/AaronFeng753/Smart-Hosts-Manager">
